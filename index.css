@@ -1,0 +1,225 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #2980b9;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#bio {
+    background-color: #ecf0f1;
+}
+
+#work, #certificate-container {
+    background-color: #f7f9f9;
+}
+
+/* Project & Certificate Containers */
+.project, .certificate {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover, .certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#project1 {
+    background-image: url(Images/Login\ Page.png);
+    background-size: cover;
+}
+
+#project2 {
+    background-image: url(Images/Myntra\ Clone.png);
+    background-size: cover;
+}
+
+#project3 {
+    background-image: url(Images/Landing\ Page.png);
+    background-size: cover;
+}
+
+#certificate1 {
+    background-image: url(Images/c-certificate.jpeg);
+    background-size: contain;
+}
+
+#certificate2 {
+    background-image: url(Images/html-certificate.jpg);
+    background-size: contain;
+}
+
+#certificate3 {
+    background-image: url(Images/css-certificate.jpeg);
+    background-size: contain;
+}
+
+#certificate4 {
+    background-image: url(Images/JS\ fubdamental\ certificate.jpeg);
+    background-size: contain;
+}
+
+#certificate5 {
+    background-image: url(Images/landing\ page-certificate\ \(2\).jpeg);
+    background-size: contain;
+}
+
+/* Footer */
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: black;
+}
+
+footer i {
+    font-size: 2rem;
+    margin: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer i:hover {
+    transform: translateY(-3px);
+    color: #1abc9c;
+}
+
+#instagram {
+    color: #e1306c;
+}
+
+#linkdin {
+    color: #0c90c9;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .project, .certificate {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
